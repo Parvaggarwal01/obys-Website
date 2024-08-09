@@ -46,6 +46,15 @@ function loadingAnimation() {
   tl.to("#loader", {
     display: "none",
   });
+
+  tl.from("#nav", {
+    opacity:0,
+  })
+
+  tl.from("#page1-main1 h1,#page1-main2 h1,#page1-main3 h2, #page1-main3 h3,#page1-main4 h1", {
+    y: 120,
+    stagger: 0.2,
+  })
 }
 
 function cursorAnimation() {
