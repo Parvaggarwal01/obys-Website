@@ -141,7 +141,7 @@ html, body{
 }
 
 #page1{
-    height: 100vh;
+    height: 78%;
     width: 100%;
     background-color: #151515;
 }
@@ -169,14 +169,29 @@ html, body{
 
 .page1-main{
     /* background-color: red; */
-    width: 72%;
-    margin-left: 27.5%;
+    width: 100%;
+    padding-left: 27.5%;
+    /* margin-left: 27.5%; */
     height: fit-content;
     overflow: hidden;
     display: flex;
     align-items: center;
     position: relative;
     /* z-index: 999; */
+}
+
+#page1-main1{
+    position: relative;
+}
+
+#page1-main1::before{
+    content: "01";
+    position: absolute;
+    font-size: 3vw;
+    font-family: silkserifregular;
+    font-weight: 100;
+    left: 17.5%;
+    top: 7%;
 }
 
 .page1-main:nth-child(2){
@@ -190,6 +205,7 @@ html, body{
     text-transform: uppercase;
     line-height: 7.5vw;
 }
+
 
 .page1-main h2, .page1-main h3{
     font-size: 7.5vw;
@@ -285,6 +301,17 @@ html, body{
     font-weight: 500;
     font-family: plainregular;
     text-transform: uppercase;
+    position: relative;
+}
+
+#page4-content h1::before{
+    content: "03";
+    position: absolute;
+    font-size: 3vw;
+    font-family: silkserifregular;
+    font-weight: 100;
+    left: -16%;
+    top: 10%;
 }
 
 #page4-content .underline{
@@ -439,4 +466,72 @@ html, body{
     font-family: silkserifregular;
     -webkit-text-stroke: 1px #fff;
     color: transparent;
+}
+
+#footer{
+    height: 95vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    background-color: #151515;
+}
+
+#footer-inner{
+    height: 100%;
+    width: 72%;
+    margin-left: 28%;
+
+}
+
+#footer h1{
+    font-size: 7.3vw;
+    width: 60vw;
+    font-family: plainregular;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+}
+
+#footer h1::before{
+    content: "04";
+    position: absolute;
+    font-size: 3vw;
+    font-family: silkserifregular;
+    font-weight: 100;
+    left: -16%;
+    top: 10%;
+}
+
+#footer-inner .underline{
+    height: 1px;
+    width: 92%;
+    background-color: #fff;
+    margin-top: 5vw;
+    /* margin-bottom: 4vw;       */
+    padding-right: 2vw;  
+}
+
+#footer-inside{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 12vw;
+    padding-top: 7vw;
+    padding-bottom: 3vw;
+}
+
+#footer-inside h6{
+    font-size: 1.1vw;
+    font-family: plainlight;
+    margin-bottom: 2vw;
+}
+
+#footer-inside h5{
+    font-size: 1.7vw;
+    font-family: plainlight;
+}
+
+#footer-inner h4{
+    font-family: plainlight;
+    margin-top: 2.5vw;
 }

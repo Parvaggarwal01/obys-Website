@@ -33,11 +33,11 @@ function loadingAnimation() {
   tl.to("#loader", {
     opacity: 0,
     duration: 0.2,
-    delay: 4,
+    delay: 3,
   });
 
   tl.from("#page1", {
-    delay: 0.2,
+    delay: 0.1,
     y: 1600,
     opacity: 0,
     duration: 0.5,
@@ -54,6 +54,7 @@ function loadingAnimation() {
   tl.from("#page1-main1 h1,#page1-main2 h1,#page1-main3 h2, #page1-main3 h3,#page1-main4 h1", {
     y: 120,
     stagger: 0.2,
+    delay: -1
   })
 }
 
@@ -70,4 +71,4 @@ function cursorAnimation() {
 }
 
 loadingAnimation();
-// cursorAnimation();   
+cursorAnimation();   
