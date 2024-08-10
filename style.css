@@ -354,12 +354,89 @@ html, body{
     background-color: #fff;
     margin-top: 10vw;
     /* margin-bottom: 4vw;       */
-    padding-right: 2vw;
+    padding-right: 2vw;  
 }
 
 #page5{
     min-height: 100vh;
     width: 100%;
     background-color: #151515;
+    position: relative;
+    padding: 5vw 0;
 }
 
+.elem{
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: -2vw;
+}
+
+.elem h1{
+    font-size: 7.3vw;
+    font-family: plainregular; 
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    /* background-color: red;    */
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 16px;  
+    animation-name: anima;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes anima {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+.elem2{
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: -2vw;
+}
+
+.elem2 h1{
+    font-size: 7.3vw;
+    font-family: plainregular; 
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    /* background-color: red;    */
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 16px;  
+    animation-name: anima2;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes anima2 {
+    from{
+        transform: translateX(calc(-100% - 20px));
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.elem span{
+    font-family: silkserifregular;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+.elem2 span{
+    font-family: silkserifregular;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
