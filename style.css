@@ -8,7 +8,8 @@
 html, body{
     height: 100%;
     width: 100%;
-    overflow-x: hidden;     
+    overflow-x: hidden;   
+    background-color: #030303; 
 }
 
 @font-face {
@@ -137,11 +138,11 @@ html, body{
 
 #main{
     position: relative;
-    background-color: #030303;
+    background-color: #151515;
 }
 
 #page1{
-    height: 78%;
+    height: 100vh;
     width: 100%;
     background-color: #151515;
 }
@@ -228,7 +229,7 @@ html, body{
     height: 100vh;
     width: 100%;
     background-color: #151515;
-    padding-top: 8vh;
+    padding-top: 8vh;    
     position: relative;
 }
 
