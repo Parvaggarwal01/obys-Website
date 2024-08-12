@@ -362,6 +362,7 @@ html, body{
     justify-content: center;
     margin-top: 23vh;
     margin-left: 10vw;
+    position: relative;
 }
 
 
@@ -377,6 +378,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     /* margin-top: 23vh; */
     /* margin-left: 10vw; */
 }
@@ -385,6 +387,53 @@ html, body{
 .page3-circle2 svg{
     height: 30%;
     rotate: -45deg;
+}
+
+.circle-in{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0;    
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+
+.circle-in p{
+    font-size: 0.95vw;
+    font-family: plainlight;
+    color: #000;
+    font-weight: 600;
+    width: 60%;
+    text-align: center;
+    scale: 0;
+    transition: all ease 0.5s;
+    transition-delay: 0.3s;
+    opacity: 0;
+}
+
+.page3-circle1:hover .circle-in{
+    scale: 1;
+}
+
+.page3-circle1:hover .circle-in p{
+    scale: 1;
+    opacity: 1;
+}
+
+.page3-circle2:hover .circle-in{
+    scale: 1;
+}
+
+.page3-circle2:hover .circle-in p{
+    scale: 1;
+    opacity: 1;
 }
 
 #page4{

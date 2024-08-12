@@ -120,11 +120,6 @@ function cursorAnimation() {
   Shery.makeMagnet("#nav-part2 h4");
   Shery.makeMagnet("#nav svg");
 }
-
-locomotiveAnimation();
-loadingAnimation();
-// cursorAnimation();
-
 function sheryAnimation() {
     Shery.imageEffect(".image-div", {
         style: 6,
@@ -166,8 +161,8 @@ function sheryAnimation() {
       });
 }
 
-
-
-
-
+locomotiveAnimation();
+loadingAnimation();
+// cursorAnimation();
 sheryAnimation();
+
