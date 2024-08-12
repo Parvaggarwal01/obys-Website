@@ -321,22 +321,28 @@ html, body{
 }
 
 #image-div-container{
-    background-color: red;
+    /* background-color: red; */
     padding: 1vw;
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
 .image-div{
-    height: 33vw;
+    height: 38vw;
     position: relative;
-    width: 24vw;
-    background-color: blue;
+    width: 27vw;
+    /* background-color: blue; */
     overflow: hidden;
     flex-shrink: 0;
+    margin: 2vw;
+}
+
+.image-div:nth-child(1){
+    height: 29vw;
+    width: 22vw;
 }
 
 .image-div img{
@@ -344,6 +350,41 @@ html, body{
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.page3-circle1  {
+    height: 23vw;
+    width: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23vh;
+    margin-left: 10vw;
+}
+
+
+.page3-circle1 svg{
+    height: 30%;
+}
+
+.page3-circle2  {
+    height: 23vw;
+    width: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 23vh; */
+    /* margin-left: 10vw; */
+}
+
+
+.page3-circle2 svg{
+    height: 30%;
+    rotate: -45deg;
 }
 
 #page4{
