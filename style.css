@@ -137,7 +137,7 @@ html, body{
 }
 
 #page1{
-    height: 100vh;
+    height: 115vh;
     width: 100%;
     background-color: #151515;
 }
@@ -691,4 +691,17 @@ html, body{
 ._canvas_conatiner{
     z-index: 99999999 !important;
     pointer-events: none;
+}
+
+#flags{
+    height: 25vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+#page1-main3{
+    z-index: 999;
 }

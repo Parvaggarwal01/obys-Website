@@ -166,6 +166,7 @@ function cursorAnimation() {
     }
   });
 }
+
 function sheryAnimation() {
   Shery.imageEffect(".image-div", {
     style: 6,
@@ -207,7 +208,39 @@ function sheryAnimation() {
   });
 }
 
+function flags() {
+  document.addEventListener("mousemove", function (dets) {
+    gsap.to("#flags", {
+      x: dets.x,
+      y: dets.y,
+    });
+  });
+
+  var flagText = document.querySelector("#page1-main3");
+  var line1 = document.querySelector(".page1-main #h3-1");
+  var line2 = document.querySelector(".page1-main #h3-2");
+
+  flagText.addEventListener("mouseenter", function () {
+    line1.style.borderBottom = "none";
+    line2.style.borderBottom = "none";
+
+    gsap.to("#flags", {
+      opacity: 1,
+    });
+  });
+
+  flagText.addEventListener("mouseleave", function () {
+    line1.style.borderBottom = "10px solid #fff";
+    line2.style.borderBottom = "10px solid #fff";
+
+    gsap.to("#flags", {
+      opacity: 0,
+    });
+  });
+}
+
 locomotiveAnimation();
 loadingAnimation();
 cursorAnimation();
 sheryAnimation();
+flags();
